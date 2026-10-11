@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>[Your Name] | Portfolio</title>
+<meta name="description" content="Portfolio of [Your Name] - [Your Role / Title], presented as a sketchbook.">
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<meta name="theme-color" content="#f3eee3">
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin><link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Newsreader:ital,wght@0,400;0,500;1,400&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=chevron_left,chevron_right,close,contrast,keyboard_arrow_up,keyboard_double_arrow_down,mail,menu,search,zoom_in,zoom_out&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#about">Skip to content</a>
+<header class="top" id="top"><div class="bar">
+ <h1 class="nm"><a href="#journal" id="siteName">[Your Name]</a></h1>
+ <button class="mt" id="mt" aria-expanded="false" aria-controls="nav" aria-label="Open menu"><span class="ms" aria-hidden="true">menu</span></button>
+ <nav class="nav" id="nav" aria-label="Main">
+  <a href="#journal">Journal</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#plates">Projects</a><a href="#contact">Contact</a>
+  <span class="sep" aria-hidden="true"></span><span id="soc" style="display:contents"></span>
+  <button class="tg" id="theme" type="button" aria-label="Dark mode" aria-pressed="false"><span class="ms" aria-hidden="true">contrast</span></button>
+ </nav>
+</div></header>
+
+<main id="main">
+<section class="hero" id="journal" aria-labelledby="jh">
+ <div id="tsp" aria-hidden="true"></div>
+ <h2 class="vh" id="jh">Project sketchbook</h2>
+ <p class="cap lab" id="role"></p>
+ <div class="stage">
+  <button class="arr l" id="prev" type="button" aria-label="Previous plate"><span class="ms" aria-hidden="true">chevron_left</span></button>
+  <div class="book" id="book" tabindex="0" role="group" aria-roledescription="sketchbook" aria-label="Project sketchbook. Drag the page or use the left and right arrow keys to turn it." aria-describedby="pdesc">
+   <div class="pg l" id="pl" aria-hidden="true"></div><div class="pg r" id="pr" aria-hidden="true"></div>
+   <div class="leaf nt" id="leaf" aria-hidden="true"><div class="face f" id="ff"></div><div class="face b" id="fb"></div></div>
+   <div class="gut" aria-hidden="true"></div>
+  </div>
+  <button class="arr r" id="next" type="button" aria-label="Next plate"><span class="ms" aria-hidden="true">chevron_right</span></button>
+ </div>
+ <p class="ptitle" id="ptitle" aria-live="polite"></p>
+ <p class="vh" id="pdesc"></p>
+ <div class="pager"><button type="button" class="pv" aria-label="Previous plate"><span class="ms" aria-hidden="true">chevron_left</span></button><span id="cnt" aria-hidden="true"></span><button type="button" class="nx" aria-label="Next plate"><span class="ms" aria-hidden="true">chevron_right</span></button></div>
+ <p class="hint" id="hint"></p>
+ <a class="chev" href="#about" aria-label="Scroll to About"><span class="ms" aria-hidden="true">keyboard_double_arrow_down</span></a>
+</section>
+<noscript><p class="wrap">This portfolio needs JavaScript to show its content and sketchbook.</p></noscript>
+
+<section class="sec" id="about" aria-labelledby="h-about"><div class="wrap">
+ <h2 class="lab" id="h-about">About</h2>
+ <p class="big" id="aboutT"></p>
+ <ul class="facts" id="facts"></ul>
+ <a class="res" id="res" hidden>Resume</a>
+ <svg class="bot" viewBox="0 0 300 200" aria-hidden="true" focusable="false"><g fill="none" stroke="#6f8a62" stroke-width="1.6" opacity=".8"><path d="M170 190C185 120 215 70 260 20"/><path d="M185 150l30-8M192 130l32-12M200 110l32-14M210 90l30-14M220 70l28-12M232 50l22-8"/><path d="M183 160l-26-6M192 140l-28-12M201 120l-26-14M211 100l-24-16M222 80l-22-16"/></g><g stroke="#a0683a" stroke-width="1.4"><path d="M95 120c-30-40-6-85 30-75 6 40-4 62-30 75z" fill="#f0b98a" fill-opacity=".7"/><path d="M95 120c40-20 70 0 66 36-40 14-62-6-66-36z" fill="#f3cda4" fill-opacity=".75"/><path d="M95 120c-44 4-66 40-40 64 38-8 52-34 40-64z" fill="#e9a977" fill-opacity=".7"/></g><path d="M95 120c-60-10-80-60-52-88 40 20 56 56 52 88z" fill="#aab99a" fill-opacity=".5" stroke="#6f8a62" stroke-width="1.4"/><circle cx="95" cy="120" r="5" fill="#d9653b"/></svg>
+</div></section>
+
+<section class="sec" id="skills" aria-labelledby="h-skills"><div class="wrap"><h2 class="lab" id="h-skills">Skills &amp; Abilities</h2><ul class="sk" id="skList"></ul></div></section>
+<section class="sec" id="experience" aria-labelledby="h-exp"><div class="wrap"><h2 class="lab" id="h-exp">Experience</h2><ul class="rows" id="expList"></ul></div></section>
+<section class="sec" id="education" aria-labelledby="h-edu"><div class="wrap"><h2 class="lab" id="h-edu">Education</h2><ul class="rows" id="eduList"></ul></div></section>
+<section class="sec" id="plates" aria-labelledby="h-proj"><div class="wrap"><h2 class="lab" id="h-proj">Projects</h2><ul class="rows" id="rows"></ul></div></section>
+<section class="sec" id="contact" aria-labelledby="h-contact"><div class="wrap">
+ <h2 class="lab" id="h-contact">Contact</h2>
+ <p class="big" style="margin-bottom:20px">Have a question, idea or opportunity? The link below opens your email app with a message addressed to me. There is no form, so nothing is sent until you press send in your own mail app.</p>
+ <a class="mail" id="mailL"></a>
+ <div class="cp" id="cp"></div>
+</div></section>
+</main>
+<footer><p id="fName"></p><p id="fLoc"></p><p id="fCopy"></p></footer>
+
+<a href="#journal" class="stt" id="stt" aria-label="Back to top"><span class="ms" aria-hidden="true">keyboard_arrow_up</span></a>
+<!-- ScrollReveal: reveal on scroll | Vanilla-Tilt: card tilt | Typed.js: typing line | tsParticles is loaded on demand (desktop only) -->
+<script src="js/config.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>
